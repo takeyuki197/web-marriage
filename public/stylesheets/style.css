@@ -6,3 +6,14 @@ body {
 a {
   color: #00B7FF;
 }
+
+@media (max-width: 767px) {
+  .container  {
+    padding: 0px !important; /* 好みに応じて余白サイズを指定 */
+    overflow-x: hidden !important; /* これがないと x軸方向に謎の余白が生じてしまう */
+  }
+
+  .navbar-header {
+    margin: 0px  !important;
+  }
+}

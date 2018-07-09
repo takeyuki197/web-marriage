@@ -1,0 +1,109 @@
+extends layout
+
+block content
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="#">How to 結婚</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+      </ul>
+      <form class="form-inline mt-2 mt-md-0">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+  <main role="main" class="container">
+    <div class="jumbotron">
+      h3 質問事項
+      p
+        <div class="form-check form-check-inline">①性別
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="sex" id="male" value="male">
+          <label class="form-check-label" for="male">男性</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="sex" id="female" value="female">
+          <label class="form-check-label" for="female">女性</label>
+        </div>
+
+      p
+        <div class="form-check form-check-inline">②年齢
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="number" name="birth" id="birth_year" value="1990">
+          <label class="form-check-label" for="birth_year">年</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="number" name="birth" id="birth_month" value="1">
+          <label class="form-check-label" for="birth_month">月</label>
+        </div>
+
+      p
+        <div class="form-check form-check-inline">③お住いの地域
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="text" name="inlineRadioOptions" id="prefecture" value="">
+          <label class="form-check-label" for="prefecture">都・道・府・県</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="text" name="inlineRadioOptions" id="city" value="">
+          <label class="form-check-label" for="city">市・区</label>
+        </div>
+
+      p
+        div ④今の状況
+        br
+        <div class="form-check form-check-inline">
+          <label class="form-check-label" for="inlineRadio2">→入籍日は？</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="nyuseki" id="nyuseki_y" value="male">
+          <label class="form-check-label" for="nyuseki_y">A. 決めた</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="nyuseki" id="nyuseki_n" value="female">
+          <label class="form-check-label" for="nyuseki_n">B. 決めてない</label>
+        </div>
+        br
+        <div class="form-check form-check-inline">
+          <label class="form-check-label" for="inlineRadio2">→両家挨拶は？</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="aisatsu" id="aisatsu_y" value="male">
+          <label class="form-check-label" for="aisatsu_y">A. した</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="aisatsu" id="aisatsu_n" value="female">
+          <label class="form-check-label" for="aisatsu_n">B. まだ</label>
+        </div>
+        br
+        div
+          <div class="form-check form-check-inline">
+            <label class="form-check-label" for="inlineRadio2">→結納は？</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="yuino" id="yuino_y" value="male">
+            <label class="form-check-label" for="yuino_y">A. した</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="yuino" id="yuino_n" value="female">
+            <label class="form-check-label" for="yuino_n">B. まだ</label>
+          </div>
+      button.btn.btn-primary(type="button") 結婚を決める
+      button.btn.btn-info(type="button") 結婚式を決める
+    </div>
+  </main>
